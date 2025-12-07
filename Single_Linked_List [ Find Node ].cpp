@@ -5,23 +5,22 @@ struct Node{
   Node* next;
 };
 
-bool FindNode(int value, Node * &head)
+bool FindNode(int value, Node * head)
 {
-  Node* current = head;
   
   if(head == NULL)
   {
     return true;
   }
   
-  while(current != NULL)
+  while(head != NULL)
   {
-    if(current->data == value)
+    if(head->data == value)
     {
       return 1;
     }
     
-    current = current->next;
+    head = head->next;
   }
   
   return false;
