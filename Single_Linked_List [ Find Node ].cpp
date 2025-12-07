@@ -7,12 +7,7 @@ struct Node{
 
 bool FindNode(int value, Node * head)
 {
-  
-  if(head == NULL)
-  {
-    return false;
-  }
-  
+
   while(head != NULL)
   {
     if(head->data == value)
