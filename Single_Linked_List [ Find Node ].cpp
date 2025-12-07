@@ -10,14 +10,14 @@ bool FindNode(int value, Node * head)
   
   if(head == NULL)
   {
-    return true;
+    return false;
   }
   
   while(head != NULL)
   {
     if(head->data == value)
     {
-      return 1;
+      return true;
     }
     
     head = head->next;
