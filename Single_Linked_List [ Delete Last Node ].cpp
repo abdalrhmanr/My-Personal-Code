@@ -22,7 +22,7 @@ void DeleteLastNode(Node * &head)
       return;
   }
   
-  Node* Current = head, * Prev = head;
+  Node* Current = head, * Prev = NULL;
   while(Current->next != NULL)
   {
     Prev = Current;
